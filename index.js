@@ -1,19 +1,18 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs")
 const app = express();
 
 PORT = process.env.PORT;
 IP = process.env.IP;
 
-app.use("/", express.static(path.join(__dirname, "views")));
+const root = path.join(__dirname, '/views');
 app.use("/public", express.static(path.join(__dirname, "public")));
-
-app.use("/pricing", (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "pricing.html"));
-});
-
-app.use("/request", (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "request.html"));
+app.use((req, res, next) => {
+  const file = req.url + ".html";
+  fs.exists(path.join(root, file), (exists) =>
+    exists ? res.sendFile(file, {root}) : next()
+  );
 });
 
 app.listen(PORT, IP, () => {
