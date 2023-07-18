@@ -1,2 +1,3 @@
-# website-commissions
+# Website Commissions
+
 The official WC website.
