@@ -15,6 +15,6 @@ app.use((req, res, next) => {
   );
 });
 
-app.listen(8080, () => {
+app.listen(8080, process.env.listen_host||"0.0.0.0", () => {
     console.log(`Listening on ${IP}:${PORT}`);
 });
