@@ -1,4 +1,5 @@
 #! /bin/sh
 cd $REPL_HOME
 export listen_host="127.0.0.1"
+export PORT=8080
 exec nodemon --ignore public/ -e js --exec "node index.js"
