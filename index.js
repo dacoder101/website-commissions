@@ -8,11 +8,12 @@ IP = process.env.IP;
 
 const root = path.join(__dirname, '/views');
 app.use("/public", express.static(path.join(__dirname, "public")));
+
 app.use((req, res, next) => {
-  const file = req.url + ".html";
-  fs.exists(path.join(root, file), (exists) =>
-    exists ? res.sendFile(file, {root}) : next()
-  );
+    const file = (!(req.url == "/") ? req.url : "/index") + ".html";
+    fs.exists(path.join(root, file), (exists) => {
+        exists ? res.sendFile(file, { root }) : next()
+    });
 });
 
 app.listen(PORT, IP, () => {
