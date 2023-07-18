@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial;
+}
+
+body {
+  /* This code is for disabling scrolling if we add more to the website feel free to comment it out */
+
+  overflow: hidden;
+  
+  /*background-image: url('images/Person_typing.png');*/
+  background-image: url('images/typing-better-quality.png');
+  
+  /* doesn't allows the image to repeat */
+	background-repeat: no-repeat;
+
+	/* scales the image proportionally to cover the background */
+	background-size: cover;
+
+	/* centers the image in the center of the background */
+	background-position: center;
+
+	/*sets the height of the body to 100viewport height */
+	height: 100vh;
+
+  margin: -0.5em;
+
+  background-color: lightgray;
+}
+
+
+/* use this if you want to tint the background */
+/*body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.1);
+  mix-blend-mode: multiply;
+}*/
+
+@keyframes moveUp {
+  0% { opacity: 0; transform: translateY(5em); }
+  100% { opacity: 1; transform: translateY(0em); }
+}
+
+.top {
+  animation: moveUp 1s;
+  margin: 1em;
+  display: flex;
+  background-color: white;
+  padding-bottom: 1em;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.title {
+  margin-left: 1em; 
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.logo {
+  margin-top: 1em;
+  width: 5em;
+  height: 5em;
+}
+
+.header {
+  animation-delay: 0.25s;
+  animation: moveUp 1s;
+  /* display: inline-block; /* skull*/
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 5.25em;
+  color: white;
+  font-size: 2.5em;
+
+  flex: 1;
+
+  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+
+  /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0056d6, 0 0 40px #0056d6, 0 0 50px #0056d6, 0 0 60px #0056d6, 0 0 70px #0056d6;*/
+}
+
+.link {
+  text-decoration: none;
+  background-color: #5555ff;
+  color: white;
+  border-radius: 0.35em;
+  font-size: 3em;
+  padding-top: 1em;
+  margin-right: 2em;
+  margin-top: 5em;
+  display: inline-block;
+
+  flex: 1;
+  text-align: center;
+
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0056d6, 0 0 40px #0056d6, 0 0 50px #0056d6, 0 0 60px #0056d6, 0 0 70px #0056d6;
+}
+
+@media only screen and (max-width: 600px) {
+ .link {
+   padding:10px;
+ }
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  animation-delay: 0.25s;
+  animation: moveUp 1s;
+  height: 20vh;
+}
