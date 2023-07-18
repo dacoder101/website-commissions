@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+cd $REPL_HOME
+exec nodemon --exec "sh gzipify.sh" -e "png html css js json jpg txt htm" -w public
