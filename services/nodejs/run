@@ -1,0 +1,3 @@
+#! /bin/sh
+cd $REPL_HOME
+exec nodemon --ignore public/ -e js --exec "node index.js"

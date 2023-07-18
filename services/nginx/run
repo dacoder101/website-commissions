@@ -1,0 +1,2 @@
+#! /usr/bin/env bash
+exec $REPL_HOME/nginx/sbin/nginx -p $REPL_HOME/nginx
