@@ -1,3 +1,3 @@
 # Website Commissions
 
-The official WC website.
+A custom WC website with an improved backend.
