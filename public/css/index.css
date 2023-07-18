@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    padding: 15px 15px;
+    text-decoration: none;
+    text-align: center;
+}
