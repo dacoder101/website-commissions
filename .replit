@@ -1,6 +1,6 @@
 # run = "node index.js"
 run = ["runsvdir", "services"]
-hidden = ["nginx.tgz", "nginx", "package-lock.json", ".config", "services", "**/*.gz"]
+hidden = ["nginx.tgz", "nginx/sbin", "package-lock.json", ".config", "**/*.gz"]
 
 entrypoint = "index.js"
 

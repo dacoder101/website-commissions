@@ -7,10 +7,10 @@ html {
 body {
   /* This code is for disabling scrolling if we add more to the website feel free to comment it out */
 
-  overflow: hidden;
+  /*overflow: hidden;*/
   
   /*background-image: url('images/Person_typing.png');*/
-  background-image: url('images/typing-better-quality.png');
+  background-image: url('images/Code_Background.jpeg');
   
   /* doesn't allows the image to repeat */
 	background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 
   margin: -0.5em;
 
-  background-color: lightgray;
+  background-color: #26283b;
 }
 
 
@@ -82,7 +82,7 @@ body {
 
   flex: 1;
 
-  text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000, 0 0 10px #000000;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
 
   /*text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0056d6, 0 0 40px #0056d6, 0 0 50px #0056d6, 0 0 60px #0056d6, 0 0 70px #0056d6;*/
 }
@@ -119,5 +119,60 @@ body {
 .form {
   animation-delay: 0.25s;
   animation: moveUp 1s;
-  height: 20vh;
+  margin-top: 1em;
+  height: 70vh;
+  border-radius: 0.5em;
+  background-color: white;
+  padding-left: -1em;
+  padding-right: -1em;
+  margin-right: 1em;
+}
+
+.projects-page {
+  height: 100vh;
+  color: black;
+}
+
+.user-icon {
+  border-radius: 50%;
+}
+
+.stars {
+  margin: 0.25em;
+  margin-top: 1.5em;
+  margin-left: 9em;
+}
+
+.user-quote {
+  margin-top: 5em;
+  margin-left: -10em;
+}
+
+.username {
+  margin-top: 1em;
+  margin-left: -10em;
+}
+
+.project-cardLeft {
+  margin-top: 50vh;
+  margin-left: 2em;
+  background-color: white;
+  display: flex;
+  width: 45%;
+  float: left;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  box-shadow: 0 0 10px gray;
+}
+
+.project-cardRight {
+  margin-top: 50vh;
+  margin-right: 2em;
+  background-color: white;
+  display: flex;
+  width: 45%;
+  float: right;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  box-shadow: 0 0 10px gray;
 }

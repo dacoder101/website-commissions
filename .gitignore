@@ -134,3 +134,7 @@ nginx.tgz
 nginx/sbin
 services/*/supervise
 node_modules
+
+# compressed files
+public/*.gz
+public/**/*.gz
